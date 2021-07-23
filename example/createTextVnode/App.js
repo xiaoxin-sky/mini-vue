@@ -1,5 +1,5 @@
 import { h, ref, reactive, createTextVNode } from "../../lib/mini-vue.esm.js";
-
+// 阅读没问题
 export default {
   name: "App",
   setup() {},

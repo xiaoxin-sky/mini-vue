@@ -375,7 +375,7 @@ function mountComponent(initialVNode, container, parentComponent) {
     initialVNode,
     parentComponent
   ));
-  console.log(`创建组件实例:${instance.type.name}`);
+  console.log(`%c[ 创建组件实例 ]:${instance.type.name}`, "color:green");
   // 2. 给 instance 加工加工
   setupComponent(instance);
 

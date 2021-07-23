@@ -1,11 +1,8 @@
 // 组件 provide 和 inject 功能
-import {
-  h,
-  provide,
-  inject,
-} from "../../lib/mini-vue.esm.js";
+import { h, provide, inject } from "../../lib/mini-vue.esm.js";
 
 const ProviderOne = {
+  name: "ProviderOne",
   setup() {
     provide("foo", "foo");
     provide("bar", "bar");
@@ -14,6 +11,7 @@ const ProviderOne = {
 };
 
 const ProviderTwo = {
+  name: "ProviderTwo",
   setup() {
     // override parent value
     provide("foo", "fooOverride");
@@ -29,6 +27,7 @@ const ProviderTwo = {
 };
 
 const Consumer = {
+  name: "Consumer",
   setup() {
     const foo = inject("foo");
     const bar = inject("bar");

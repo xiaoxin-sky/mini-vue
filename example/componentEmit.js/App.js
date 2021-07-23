@@ -13,9 +13,10 @@ export default {
       h("div", {}, "你好"),
       h(Child, {
         msg: "your name is child",
-        onChange(a, b) {
+        onChange: (a, b) => {
           console.log("---------------change------------------");
           console.log(a, b);
+          console.log(this, "-----");
         },
         onChangePageName(a, b) {
           console.log("---------------change-page-name------------------");

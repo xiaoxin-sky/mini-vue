@@ -10,7 +10,7 @@ export default {
 
   render() {
     return h("div", {}, [
-      h("div", {}, "你好"),
+      h("div", {}, "你好1"),
       h(Child, {
         msg: "your name is child",
         onChange(a, b) {
